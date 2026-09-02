@@ -5,10 +5,10 @@ pipeline. Pulls company financials via Yahoo Finance, computes standard
 fundamental ratios, and runs a 3-step agent pipeline to produce an
 analyst-style written summary.
 
-## Why this project exists
+## Project objective
 
 Built to demonstrate:
-- Accounting/fundamental analysis knowledge (ratio engine, in plain Python — no AI involved)
+- Accounting/fundamental analysis knowledge (ratio engine, in plain Python)
 - Data pipeline skills (Alpha Vantage API → structured ratios → dashboard)
 - Practical AI agent design: a multi-step pipeline (Interpreter → Anomaly Detector → Synthesizer),
   each with a narrow task and structured input/output, rather than one big prompt
@@ -58,7 +58,7 @@ enter a ticker (e.g. `AAPL`, `MSFT`, `NVDA`).
 
 ## Notes / Disclaimers
 
-- Output is analytical and educational only — the agents are explicitly
+- Output is analytical and educational only - the agents are explicitly
   instructed not to give buy/sell/hold recommendations.
 - Alpha Vantage's free tier allows 25 requests/day and 5 requests/minute,
   with no credit card required. Each ticker analysis uses ~5 requests
